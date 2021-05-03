@@ -1,5 +1,5 @@
 # giant-drawing-instruments
-CAD files for some oversize drawing instruments, useful for marking out fabric structures
+CAD files (Fusion360, STL, DXF, Prusa project, Lightburn project) for some oversize drawing instruments, useful for marking out fabric structures
 
 A large divider-style compass, lasercut from 6mm ply. Pen and point (a cheap center punch) are held on with hair elastics.
 
@@ -8,3 +8,5 @@ An even larger beam compass, 3d-printed parts that fit (UK) plastic waste pipe. 
 A giant protractor, lasercut from acrylic and paint-filled.
 
 A giant 30/60 setsquare with metric graduations and dotted lines parallel to the edges, lasercut from acrylic and paint-filled.
+
+The protractor and setsquare graduations are generated in Python as a Fusion360 macro.
