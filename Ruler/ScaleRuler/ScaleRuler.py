@@ -34,7 +34,8 @@ def run(context):
         textHeightcm = 0.5
         textHeight10cm = 0.8
         xMax = 10100 # in printed units, not sketch dims, so 10m
-        scale = 1.0/24.0
+        #scale = 1.0/24.0  #1:24 for playmobil
+        scale = 1.0/42.0    #1:42 for minifigs
         legendScale = 1000
 
         for x in range(0, xMax, 100):  #every 10cm
@@ -62,7 +63,7 @@ def run(context):
                 diagonalPt = adsk.core.Point3D.create(xcm+1.0, topYcm+textHeight, 0.0)
                 sketchTextInput.setAsMultiLine(cornerPt, diagonalPt, horizontalAlignment, verticalAlignment, 0)
 
-                # givingrotation to frame about right bottom corner of frame
+                # giving rotation to frame about right bottom corner of frame
                 angle = 3.14*0.5
                 multilineDef = sketchTextInput.definition
                 multilineDef.rotate(angle, adsk.fusion.TextBoxKeyPoints.MiddleLeftTextBoxKeyPoint)
